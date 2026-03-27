@@ -414,7 +414,7 @@ pagination and sorting
         4) Password encoding(Encrypt and Decrypt the password)
         5) Outh2 and JWT.
 
-# Authentication
+# Authentication:
 It is a process verify  the identity of a user or a system at the time of user login.
 -> It supports multi Authentication mechanism :
     1) Form Based Login
@@ -446,4 +446,22 @@ Spring security simplifies securing REST API`s, web applications and Microservic
 Spring security uses a Filter chain to handle security for incoming request where developers can add, remove, or customize filters as needed.
 
 # What is CSRF ?
--> It stands for Cross-site-Request-forgery
+-> It stands for Cross-site-Request-forgery. It is a type of web security attack where malecious website tricks a user browser into performing an unwanted action from a trusted site where the user is already authenticated.
+
+# How CSRF works ?
+-> Step 1 -> User Login sbi.com and receive the session
+-> Step 2 -> User visits a malecious website abc.com
+-> Step 3 -> The malecious website contains a hidden request (to withdrawal the amount) and it will hit and send the request to sbi.com.
+-> Step 4 -> sbi.com thinks the request is original and it will transfer the amount or change the password or change the bank details.
+
+# Characteristics of CSRF:
+-> User must be logged in and it uses cookies or tokens automatically with the help of cookies and session it will tricks the browser.
+
+# How to prevent CSRF ?
+- Spring security provides builtin CSRF protection such as: CSRF Tokens, Avoid get request or state changes, same site cookies .
+
+# How Spring security handles CSRF:
+- It is enabled default by web application but for REST API we have to disabled it with automatically generates CSRF Tokens and validate them.
+- It works with Forms and Ajax requests.
+
+
