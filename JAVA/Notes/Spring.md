@@ -413,3 +413,37 @@ pagination and sorting
         3) Protection against attacks such as CSRF, XSS, Session, FixedSession.
         4) Password encoding(Encrypt and Decrypt the password)
         5) Outh2 and JWT.
+
+# Authentication
+It is a process verify  the identity of a user or a system at the time of user login.
+-> It supports multi Authentication mechanism :
+    1) Form Based Login
+    2) Http Basic
+    3) LDAP/OUTH2/JWT .
+-> It can integrate with custom authentication provider.
+
+# Authorization:
+-> It controls access to resources based on roles such as:
+    - user, admin, productowner
+-> It supports method level security using annotations such as :
+    @PreAuthorize,      @PostAuthorize,      @Secured
+
+# Password Management: 
+-> Spring security securely stores and manages passwords in database and provides password encoding strategies such as:
+    1) BCryptPasswordEncoder
+    2) ScryptPasswordEncoder
+
+-> It helps to prevent common attacks such as: Password Leaks and Brute Force Attack.
+
+# Protection against common threats:
+-> Spring security provide built in support for security attacks Mitigation such as: 
+   CSRF,   XSS,   Session Fixation,  ClickJaking etc.
+
+Note: Spring security seamless integration with spring-boot,  spring mvc,  spring data jpa,  and spring oauth.
+Spring security simplifies securing REST API`s, web applications and Microservices.
+
+# Customizable Spring Security Filter: 
+Spring security uses a Filter chain to handle security for incoming request where developers can add, remove, or customize filters as needed.
+
+# What is CSRF ?
+-> It stands for Cross-site-Request-forgery
