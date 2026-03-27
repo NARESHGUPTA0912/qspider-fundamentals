@@ -467,4 +467,4 @@ Spring security uses a Filter chain to handle security for incoming request wher
 # JsonManagedReference : It is a jackson annotation which is used to handle infinite recursion when you have one-to-many bi-directional relationship .
 - We used this annotation in owning side relationship at the top of owning reference variable.
 
-# JsonBackReference: It is used to ignore Serialization 
+# JsonBackReference: It is used to ignore Serialization and prevent infinite looping. we write 
