@@ -3,3 +3,4 @@ SQL/
 bin/
 .vscode/
 .dist/
+node_modules/

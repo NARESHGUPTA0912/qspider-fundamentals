@@ -65,7 +65,7 @@ D -> Delete
 
 # Changes to Stagged
 For commit all files
--> git add .  
+-> git add .
 
 For commit one file
 -> git add <FileName>
