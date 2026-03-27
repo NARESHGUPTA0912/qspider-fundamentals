@@ -464,4 +464,7 @@ Spring security uses a Filter chain to handle security for incoming request wher
 - It is enabled default by web application but for REST API we have to disabled it with automatically generates CSRF Tokens and validate them.
 - It works with Forms and Ajax requests.
 
+# JsonManagedReference : It is a jackson annotation which is used to handle infinite recursion when you have one-to-many bi-directional relationship .
+- We used this annotation in owning side relationship at the top of owning reference variable.
 
+# JsonBackReference: It is used to ignore Serialization 
