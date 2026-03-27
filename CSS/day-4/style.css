@@ -1,0 +1,19 @@
+h2 ~ h5{
+    color: rgb(134, 26, 236);
+}
+
+/* immediate selector */
+
+h2 + p {
+    color: blue;
+}
+
+h2+p+div+span{
+    color: brown;
+}
+
+/* if two or more sibling have same class and we've to target specific sibling then we'll provide new unique class to that sibling */
+
+h2 ~ .p2{
+    color:aqua
+}

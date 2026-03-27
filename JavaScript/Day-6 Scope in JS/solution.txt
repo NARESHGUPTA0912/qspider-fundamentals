@@ -1,0 +1,19 @@
+Scopes:-
+
+Script Scope
+  b : 200
+
+Global Scope
+  a : 100
+  c : 300  (Autoglobal)
+
+
+Output Statement:-
+71. Inside a Block
+72.   a: 100
+73.   b: 200
+74.   c: 300
+76. Outside a Block
+77.   a: 100
+78.   b: 200
+79.   c: 300

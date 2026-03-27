@@ -1,0 +1,20 @@
+div:has(h1){
+    color: brown;
+}
+
+div:has(span){
+    color: blue;
+}
+
+div:has(.p2){
+    color:chartreuse
+}
+
+div:has(h4){
+    color:aqua
+}
+
+div:not(:has(h1,.h2,.h4,span)){
+    color: rgb(34, 216, 216);
+}
+

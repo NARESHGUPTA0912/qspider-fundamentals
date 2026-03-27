@@ -1,0 +1,5 @@
+main :nth-child(2), 
+main :nth-child(3){
+    color: blue;
+    background: #cd2a2a;
+}

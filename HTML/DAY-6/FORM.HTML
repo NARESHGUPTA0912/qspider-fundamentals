@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Registration Form</legend>
+        <label for="input1">
+          College Name <br />
+          <input
+            type="text"
+            id="inp"
+            name="college"
+            placeholder="Enter your College Name"
+            value="AKTU"
+            disabled
+          />
+        </label>
+        <br />
+        <label for="input1">
+                      <sup style="color: crimson;">*</sup>
+          Username <br />
+
+          <input
+            type="text"
+            id="input1"
+            name="username"
+            placeholder="Enter your name"
+            value="Naresh Gupta"
+            minlength="2"
+            maxlength="16"
+            readonly
+          />
+        </label>
+        <br /><br />
+
+        <label for="input2">
+                      <sup style="color: crimson;">*</sup>
+          Mobile <br />
+
+          <input
+            type="tel"
+            id="input2"
+            name="mobile"
+            minlength="10"
+            maxlength="10"
+            placeholder="+91 -xxxxxxxxxx"
+          />
+        </label>
+        <br /><br />
+        <label for="input3">
+            <sup style="color: crimson;">*</sup>
+          Email <br />
+          <input
+            type="email"
+            id="input3"
+            name="email"
+            placeholder="xyz@gmail.com"
+            minlength="10"
+            maxlength="32"
+          />
+        </label>
+        <br /><br />
+        <label for="input4">
+            <sup style="color: crimson;">*</sup>
+          Password <br />
+          <input
+            type="password"
+            id="input4"
+            name="password"
+            placeholder="Enter Password"
+          />
+        </label>
+        <br /><br />
+        <label for="input5">
+          <sup style="color: crimson;">*</sup>Year of Passing <br />
+          <select name="" id="input5">
+            <option value="" disabled selected>-- Select your YOP --</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+          </select>
+        </label>
+        <br /><br />
+        <label for="input5">State
+            <input 
+            type="text"
+            id="input5"
+            name="userState"
+            placeholder="Enter your state"
+            list="stateName"
+            >
+            <datalist>
+                <option value="uttarakhand"></option>
+                ><option value="punjab"></option>
+                ><option value="maharashtra"></option>
+                ><option value="delhi"></option>
+            </datalist>
+        </label>
+        <label for="input6">
+          Feedback <br>
+          <textarea name="feedback" id="input6" placeholder="Feedback" rows="10" cols="20">
+                </textarea
+          >
+        </label>
+        <br>
+        <input type="button" id="inp8" value="Sign In">
+        <input type="button" id="inp8" value="Log In">
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+
+<!-- diff betweel datalist or dropdown list
+1. we cant write in dropdown list
+2. we see entire suggestion in dropdown list
+3. in datalist, we write text in value
+4.  
+-->

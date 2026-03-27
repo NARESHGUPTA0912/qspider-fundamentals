@@ -1,0 +1,16 @@
+main :first-child :nth-last-child{
+    color: crimson;
+}
+
+main :nth-child(2) :first-child{
+    color: magenta;
+}
+
+main :nth-last-child :nth-child(2){
+    color: blue;
+}
+
+
+
+
+

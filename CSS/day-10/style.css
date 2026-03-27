@@ -1,0 +1,48 @@
+/* dancing script */
+
+/* @import url(pathfor) */
+
+@import url(./main.css);
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 120px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 400;
+    color: aqua;
+    background-color: rgb(180, 70, 70);
+    /* background-color: #fff; */
+
+}
+
+/* div{
+    background-color: #b53e3e;
+} */
+
+body{
+    min-height: 100vh;
+    display: flexbox;
+    align-items: center;
+}
+    
+
+.wrapper{
+    width: 1000px;
+    height: 500px;
+    background-color: #90e0ef;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-image: url("");
+    background-size: auto;
+    background-position: center center;
+}
+
+
+

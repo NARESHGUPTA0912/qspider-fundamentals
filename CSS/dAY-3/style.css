@@ -1,0 +1,27 @@
+/* main>p{
+    color:aqua
+}
+
+main>.p1{
+    color: black;
+}
+
+main> #p2{
+    color: blue;
+}
+
+main > article > p{
+    color:blueviolet
+}
+
+main > article > .i1{
+    color: blanchedalmond;
+} */
+
+MAIN SPAN{
+    color: chartreuse;
+}
+
+#home .s1{
+    color: blueviolet;
+}

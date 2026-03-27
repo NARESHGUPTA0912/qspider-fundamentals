@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "DSA",
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}
