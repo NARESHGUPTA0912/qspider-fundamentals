@@ -1,5 +1,3 @@
-# qspider-fundamentals
-
 # 📚 Qspider Fundamentals
 
 This repository contains my structured practice and learning from Qspider classes.
