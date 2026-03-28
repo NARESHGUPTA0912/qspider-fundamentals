@@ -1,4 +1,4 @@
-# Different between async and defer?(claude.ai)
+# Difference between async and defer?(claude.ai)
 
 -> 1. async:- Downloads the script in parallel with HTML parsing, but executes immediately when
 ready (pause HTML parsing), with no guaranteed executeion order between multiple async scripts.
