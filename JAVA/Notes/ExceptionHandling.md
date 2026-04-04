@@ -17,8 +17,82 @@ Q) Difference Between Exception and Error:
 2) If error occurs in the program then it cannot be caught by using try-catch and normal flow of the application cannot be maintained.
 3) If Error occurs then application will be terminated. 
 
+# Types of Exception:
+1) Checked Exception
+2) Unchecked Exception
 
 
+<!-- 30 mar -->
+- At a time only one exception can be thrown from try block.
+- If first exception will not occur then only next exception can be thrown from try block.
+- We can use multiple catch block with try block to handle different exceptions differently.
+- When we use multiple catch with one try block then we have follow the child to parent catch block flow.
+- We can declare multiple exceptions at one catch block by using single pipeline symbol(operator).
+- We can use multiple try catch inside a program to create and handle multiple exceptions.
+
+# finally block: It is a block which is used with try-catch block to execute some mandatoru=y conditions. The statements written inside finally block will always execute whether application terminates normally or abnormally.
+    Syntax -> try{
+
+    }catch(Exception e){
+
+    }finally{
+        // mandatory Condition
+    }
+_USE of Finally Block_:
+1) used for resource closing such as scanner closing etc.
+2) used for memory cleaning
+3) used for file closing
+4) used fot Database connection closing
+5) If we want to execute some code compulsarily than we should write that code in finally block.
+
+*In which situation finally block will not execute ?*
+- If System.exit(0); executes before finally then finally block will not execute.
+- if try-catch block has Infinite loop then in that case finally block may not execute.
+- If exceptions occurs inside finally block then finally block will not execute.
+- If JVM crashes while in execution then finally block will not execute.
+
+*Can we use try without catch ?*
+- Yes, we can use try block without catch block in that case try block should be used with finally block.
+- try with finally will execute normally if exception does not occur. If exception occurs then normal flow will not be maintained. 
+Note: If return statement is provided from try-catch-finally then the return value will always go from finally block.
+
+# Nested try-catch block:
+- If a try-catch block is used inside another try-catch block then it is called nested try- catch block.
+- try-catch block can be used inside try block, catch block, or inside finally block.
+
+# throw and throws:
+_throw:_ throw is a keyword which is used to throw the object of Exception.
+- throw keyword only creates the Exception in the program.
+- Ex: throw new ArithmeticException();      throw new InsufficientFundException();
+
+_throws Keyword / Exception Declaration:_ It is a keyword which is used to declare the exception of a method. When exception is declared on method then it will be the responsibility of caller to handled the exception using try-catch block. 
+- we can declare multiple exceptions by using one throws keyword.
+- Ex: public static void checkEligibility(int age) throws UnderAgeException, ArithmeticException {
+        if(age>=18) 
+            Sop("you are eligible to vote");
+        else
+            throw new UnderAgeException();
+      }
+      -----------------------------------------
+      try{
+        check/eligibility(23);
+      }catch(Exception e){
+        Sop(e.getMessage());
+      }
+
+# Difference b/w throw and throws:
+- It is used to throw the exception object but throws is used to declare the exception.
+- Only one object can be thrown by using one throw keyword while In throws, multiple exceptions can be declared using one throws keyword.
+- throw is used inside method but throws is used at method declaration.
+- throw keyword is followed by instance of exception but throws keyword is followed by the name of exception.
+
+# Custom Exception:
+- An Exception created by user is called Custom Exception. 
+- If Custom Exception is craeted using RuntimeException then it will for Unchecked Exception otherwise if it is formed using Exception then it will for checked exception.
+
+# try-with-resources:
+- we can use multiple resource inside try-with-resource by using `?` .
+**
 
 
 
