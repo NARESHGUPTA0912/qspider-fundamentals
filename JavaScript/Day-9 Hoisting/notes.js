@@ -12,7 +12,7 @@
 
 
 /**
- * ! Temporal Dead Zone (TDZ) :- 
+ * ! Temporal Dead Zone (TDZ) :-
  * 1.  It is the time frame between variable declaration and variable initialization in this time frame we can not access a variable.
  * 
  * 2. variable declared with let and const belongs to Temporal Dead Zone.

@@ -1,40 +1,69 @@
-# Token : it is smallest unit of prog. lang.
-ex - > const a = 10;
+1) && (Logical AND) vs || (Logical OR)
 
-# Types of tokens
--> there are 5 types of tokens -> keywords, identifiers, operators, literals, punctuator;
-
-# keywords -> keywords are predefined words which is used to perform some specific task.
-1. they are always written in lower case letters.
-ex -> if, else, for, while, break, continue, switch, extends, try, catch, finally, throw, class...
-        function, var, let, const, delete, in.... etc.
-
-# Identifiers -> they are user given names that is used in writing a program.
-1. name of a class
-2. name of a method
-3. name of a variable
-4. name of a package
-5. name of a any other class member.
-
-# Operators -> they are predefined symbols which is used to perform some specific tasks.
-* Operands -> the values needed by an operator is known as operands.
-
-# Types pf Operators :-
-1. Unary operators:
-    * Increment / decrement Operator (++, --)
-    * Logical Not (!)
-
-2. Binary Operator:
-    * Assignment Op.
-    * Arithmetic Op.
-    * Relatinal or Comparison Op. (>, <, >=, <=, ==, !=, ===, !==)
-        -> == loose equality
-        -> != loose not equality
-        -> === strict equality
-        -> !== strict not equality
-    * Logical AND / Logical OR Op.
-
-3. Ternary Operator:
-    * Conditional Operator 
+Operator	Behavior
+&& → AND	Returns the first falsy value, otherwise returns the last operand. Used for short-circuiting conditions.
+`	
+✅ Examples:
+js
 
 
+let x = false;
+let y = "hello";
+let z = null;
+console.log(x && y);        // false → because first is falsy → stops here  
+console.log(y || z);        // hello → because y is truthy
+// Real use case: Safe fallbacks (common pattern!)
+const name = user.name ?? "Anonymous"; 
+// Equivalent to:
+let name = user.name || "Anonymous";
+// Also used in function composition
+function validateInput(value) {
+    if (!value && !value.length) return false;
+    // Can also write this as:
+    return value && value.length > 0;  
+}
+⚠️ Common Pitfall:
+Don’t use || for defaults when dealing with null, undefined, or empty strings — it may silently break. Prefer optional chaining (?.) or nullish coalescing (??) in modern JS.
+
+2) Logical OR (||) – In-Depth
+✅ Definition:
+The logical OR operator (||) returns the first truthy value in an expression. If all values are falsy, it returns the last one (the right-hand operand).
+
+It’s a short-circuiting operator: evaluates left-to-right and stops as soon as a truthy result is found.
+
+📌 Truth Table:
+
+
+Left	Right	Result
+false	"hello" → "hello" ✅	
+0	null → null ❌	
+""	5 → 5 ✅	
+true	anything → first value ✅	
+💡 Real-World Use Cases:
+A) Default Value Assignment (Fallbacks)
+js
+
+
+const name = user.name || "Anonymous";
+// If user.name is undefined or null, uses fallback.
+B) Function Arguments with Defaults
+js
+
+
+function log(message = "No message") {
+    console.log("[LOG]", message);
+}
+log(); // → "[LOG] No message"
+log("Hi"); // → "[LOG] Hi"
+⚠️ Warning: Don’t use || for null/undefined only — better alternatives:
+
+js
+
+const safeName = user?.name ?? "Guest";  // Nullish coalescing (ES2020)
+Avoids coercion issues like "0" || false → true, which is dangerous.
+
+✅ Summary:
+Use || for fallbacks, not equality checks. Prefer optional chaining (?.) + nullish coalescing (??) in modern JS to prevent silent type coercion bugs.
+
+const name = user.name || "Anonymous";
+// If user.name is undefined or null, uses fallback.

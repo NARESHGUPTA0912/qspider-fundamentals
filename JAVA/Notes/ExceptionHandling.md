@@ -3,24 +3,23 @@
 # Exception Handling: It is a mechanism by which program maintains the normal flow of execution even incase exception occurs in the program.
 - Java provides different keywords to work with exceptions such as: try, catch, finally, throw, throws.
 
-# Exception Hierarchy: 
+# Exception Hierarchy:
 - Throwable(C) is the top-most parent class in exception hierarchy. It has two child :
 1) Exception                    2) Error
 
 Q) Difference Between Exception and Error:
 
 # Exception:
-1) Exception is a class which is used to represent an unexpected situation. 
+1) Exception is a class which is used to represent an unexpected situation.
 2) If exception occurs in the program then it can be caught by using try-catch and normal flow of the application can be maintained.
 # Error:
-1) Error is also a class but it is used to represent a serious problem in the application. 
+1) Error is also a class but it is used to represent a serious problem in the application.
 2) If error occurs in the program then it cannot be caught by using try-catch and normal flow of the application cannot be maintained.
-3) If Error occurs then application will be terminated. 
+3) If Error occurs then application will be terminated.
 
 # Types of Exception:
 1) Checked Exception
 2) Unchecked Exception
-
 
 <!-- 30 mar -->
 - At a time only one exception can be thrown from try block.
@@ -53,7 +52,7 @@ _USE of Finally Block_:
 
 *Can we use try without catch ?*
 - Yes, we can use try block without catch block in that case try block should be used with finally block.
-- try with finally will execute normally if exception does not occur. If exception occurs then normal flow will not be maintained. 
+- try with finally will execute normally if exception does not occur. If exception occurs then normal flow will not be maintained.
 Note: If return statement is provided from try-catch-finally then the return value will always go from finally block.
 
 # Nested try-catch block:
@@ -91,27 +90,11 @@ _throws Keyword / Exception Declaration:_ It is a keyword which is used to decla
 - If Custom Exception is craeted using RuntimeException then it will for Unchecked Exception otherwise if it is formed using Exception then it will for checked exception.
 
 # try-with-resources:
-- we can use multiple resource inside try-with-resource by using `?` .
+- we can use multiple resource inside try-with-resource by using `;` .
 **
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- apps -->
+omnitools, indus by sarvam, google ai edge gallery, comet ai browser, ulaa browser, skycards .
 
 
 

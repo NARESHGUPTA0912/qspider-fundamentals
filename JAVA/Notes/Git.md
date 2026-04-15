@@ -252,3 +252,67 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin \<repo\_url>
 git push -u origin main
+
+
+------------------------------------------------------------------------------------------------------
+<!-- 8 April -->
+# Advance Github:
+
+1) How to move from Working area to Stagging Area
+    -> git add fileName
+    -> git add .    (for all files)
+
+2) How to unstage files:
+    -> git rm --cached fileName   (remove all commits and untrack the file)
+    -> git rm --cached -r .       (remove all commits and untrack the file)
+
+    -> git restored --staged fileName (better bcz it restore the last commit)
+    _Difference_:  git restore --staged: undo a git add(keeps tracking the file); 
+                   git rm --cached: stop tracking the file entirely(next commit will delete it from the repo, but keeps it on disk).
+
+3) How to commit:
+    -> git commit -m "commit msg"
+    -> git commit -am "commit msg"
+    -> git commit --amend -m "new-commit-msg"
+    -> git commit --amend --no-edit
+    -> git commit --allow-empty -m "your message"
+    -> git commit -m "commit-msg" --author="name email
+    -> git commit --allow-empty -m "Project Completed" --signoff
+
+--------------------------------------------------------------------------------------
+<!-- 9 april -->
+4) How to ceaete branch:
+  -> git branch branch_name
+  -> git checkout -b branch_name
+  ->** git switch -c branch_name
+
+5) How to check no of branch:
+  -> git branch
+
+6) How to move from 1 branch to other
+    -> git switch branch_name
+    -> git checkout branch_name
+
+7) How to delete a branch
+    -> git branch -d branchName     (Normally)
+    -> git branch -D branchName     (Forcefully)
+
+8) How to merge branch:
+    *Types of branch:* 
+        1) Fast Forward Merge
+        2) Three Way Merge
+        3) Rebase Merge
+        4) Interactive Rebase Merge
+        5) Squashing Merge
+
+    -> git merge branchName
+    -> git 
+
+    - when confict happens it shows 4 options: 
+            1) accept current changes 
+            2) accept incoming changes 
+            3) accept both changes
+            4) compare changes 
+
+git reset --hard Head <steps>
+git reset --soft 
