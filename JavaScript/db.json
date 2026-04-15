@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "title": "Trouser",
+      "price": 899,
+      "id": "ffL3RBAoeO0"
+    },
+    {
+      "id": "dicHkyA-kRw",
+      "title": "Colgate",
+      "price": 20
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

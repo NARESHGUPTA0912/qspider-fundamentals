@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD App</title>
+</head>
+<body>
+
+  <h1>Product CRUD</h1>
+
+  <!-- Form -->
+  <form id="productForm">
+    <input type="hidden" id="id">
+
+    <input type="text" id="title" placeholder="Enter product name" required>
+    <input type="number" id="price" placeholder="Enter price" required>
+
+    <button type="submit">Save Product</button>
+  </form>
+
+  <hr>
+
+  <!-- Product List -->
+  <div id="productList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
