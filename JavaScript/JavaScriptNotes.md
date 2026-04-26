@@ -166,7 +166,7 @@ ex -> if, else, for, while, break, continue, switch, extends, try, catch, finall
     # Here we use inbuild functions to convert the data from one type into another:
     _primitive:_           _Non-primitive:_
        1) Number()              1) Array()
-       2) String()              2) Object()
+      2) String()              2) Object()
        3) Boolean()             3) Set()
        4) BigInt()              4) Map()
        5)  Symbol()
@@ -404,7 +404,7 @@ _Important Object methods:_
 _Destructuring:_ It is a shorthand syntax to extract values from arrays or objects directly into variables, 
     like const {name, age} = user or const [a, b] = array.588
 _________________________________________________________________________________________________________________________________
-
+        
 <!-- 5 jan -->
 # DOM: 
 <!-- [07-01-26] -->

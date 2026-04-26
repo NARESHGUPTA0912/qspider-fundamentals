@@ -20,7 +20,7 @@ console.log(b);
 // var a 
 console.log(a);  // -----> undefined
     a = 20;
-console.log(a);
+console.log(a); // 20
     a = 10;        // Declaration Line
  */
 
