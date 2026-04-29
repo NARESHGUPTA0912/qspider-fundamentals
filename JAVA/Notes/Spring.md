@@ -497,3 +497,6 @@ Spring security uses a Filter chain to handle security for incoming request wher
 # Some other annotations:
  @RestControllerAdvice,    @ExceptionHandler,     @JsonIgnore,     @OneToOne(mappedBy = "adhar"),      @OneToOne(cascade = CascadeType.ALL)
  @RequestBody,      @PathVariable,
+
+ ----------------------------------------------------------------------------------------------------------------
+ - InMemoryUserDetailsMannager(C)

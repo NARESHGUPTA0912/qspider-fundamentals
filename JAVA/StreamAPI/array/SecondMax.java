@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class SecondMax {
     public static void main(String[] args) {
-        int[] a = {76};
+        int[] a = {76,100,78,23,71,9,23};
         System.out.println(secongMax(a));
         
     }

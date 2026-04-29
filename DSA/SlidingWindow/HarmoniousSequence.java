@@ -1,6 +1,4 @@
 import java.util.*;
-import java.util.logging.FileHandler;
-
 public class HarmoniousSequence {
     public static int findLongestHarmoniousSubsequence(int[] nums) {
         Map<Integer, Integer> countMap = new HashMap<>();

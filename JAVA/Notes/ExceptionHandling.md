@@ -96,7 +96,13 @@ _throws Keyword / Exception Declaration:_ It is a keyword which is used to decla
 <!-- apps -->
 omnitools, indus by sarvam, google ai edge gallery, comet ai browser, ulaa browser, skycards .
 
-
+<!-- deleted apps from lap on 27-4-26-->
+1) Google Play Games
+2) PowerBI
+3) BlueStack, bluestack services, bluestack x
+4) Codex
+5) Cursor
+6) lively wallpaper
 
 
 
